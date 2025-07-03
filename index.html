@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Puzzle Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Drag and Drop Puzzle Game</h1>
+    <div class="bg"></div>
+    <div class="drag" id="drag">
+      <div class="dragbox">
+        <div
+          class="images"
+          id="block1"
+          draggable="true"
+          ondragstart="drag(event)"
+          style="--img: url(row-1-column-1.jpg)"
+        ></div>
+      </div>
+      <div class="dragbox">
+        <div
+          class="images"
+          id="block2"
+          draggable="true"
+          ondragstart="drag(event)"
+          style="--img: url(row-1-column-2.jpg)"
+        ></div>
+      </div>
+      <div class="dragbox">
+        <div
+          class="images"
+          id="block3"
+          draggable="true"
+          ondragstart="drag(event)"
+          style="--img: url(row-1-column-3.jpg)"
+        ></div>
+      </div>
+      <div class="dragbox">
+        <div
+          class="images"
+          id="block4"
+          draggable="true"
+          ondragstart="drag(event)"
+          style="--img: url(row-2-column-1.jpg)"
+        ></div>
+      </div>
+      <div class="dragbox">
+        <div
+          class="images"
+          id="block5"
+          draggable="true"
+          ondragstart="drag(event)"
+          style="--img: url(row-2-column-2.jpg)"
+        ></div>
+      </div>
+      <div class="dragbox">
+        <div
+          class="images"
+          id="block6"
+          draggable="true"
+          ondragstart="drag(event)"
+          style="--img: url(row-2-column-3.jpg)"
+        ></div>
+      </div>
+      <div class="dragbox">
+        <div
+          class="images"
+          id="block7"
+          draggable="true"
+          ondragstart="drag(event)"
+          style="--img: url(row-3-column-1.jpg)"
+        ></div>
+      </div>
+      <div class="dragbox">
+        <div
+          class="images"
+          id="block8"
+          draggable="true"
+          ondragstart="drag(event)"
+          style="--img: url(row-3-column-2.jpg)"
+        ></div>
+      </div>
+      <div class="dragbox">
+        <div
+          class="images"
+          id="block9"
+          draggable="true"
+          ondragstart="drag(event)"
+          style="--img: url(row-3-column-3.jpg)"
+        ></div>
+      </div>
+    </div>
+    <div class="drop">
+      <div
+        class="dropbox"
+        ondrop="drop(event)"
+        ondragover="dropOver(event)"
+      ></div>
+      <div
+        class="dropbox"
+        ondrop="drop(event)"
+        ondragover="dropOver(event)"
+      ></div>
+      <div
+        class="dropbox"
+        ondrop="drop(event)"
+        ondragover="dropOver(event)"
+      ></div>
+      <div
+        class="dropbox"
+        ondrop="drop(event)"
+        ondragover="dropOver(event)"
+      ></div>
+      <div
+        class="dropbox"
+        ondrop="drop(event)"
+        ondragover="dropOver(event)"
+      ></div>
+      <div
+        class="dropbox"
+        ondrop="drop(event)"
+        ondragover="dropOver(event)"
+      ></div>
+      <div
+        class="dropbox"
+        ondrop="drop(event)"
+        ondragover="dropOver(event)"
+      ></div>
+      <div
+        class="dropbox"
+        ondrop="drop(event)"
+        ondragover="dropOver(event)"
+      ></div>
+      <div
+        class="dropbox"
+        ondrop="drop(event)"
+        ondragover="dropOver(event)"
+      ></div>
+    </div>
+    <button id="reset" onclick="window.location.reload()">Reset Puzzle</button>
+    <script src="script.js"></script>
+  </body>
+</html>
