@@ -91,3 +91,70 @@ h1 {
   background-color: #061e31b5;
   color: aliceblue;
 }
+
+@media screen and (max-width: 785px) {
+  body {
+    flex-direction: column;
+    gap: 50px;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 10px;
+  }
+  .drag {
+    width: 100%;
+    justify-content: center;
+  }
+  .dragbox {
+    width: 80px;
+    height: 80px;
+  }
+  .drop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .dropbox {
+    width: 100px;
+    height: 100px;
+  }
+  #reset {
+    width: 90vw;
+    min-width: 180px;
+    font-size: 15px;
+    padding: 8px 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h1 {
+    font-size: 32px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    gap: 20px;
+    padding: 0 2vw;
+  }
+  .dragbox {
+    width: 55px;
+    height: 55px;
+  }
+  .dropbox {
+    width: 60px;
+    height: 60px;
+  }
+  .drop {
+    gap: 3px;
+  }
+  #reset {
+    width: 98vw;
+    font-size: 13px;
+    padding: 6px 5px;
+    bottom: 10px;
+  }
+  h1 {
+    font-size: 20px;
+    top: 5px;
+  }
+}
